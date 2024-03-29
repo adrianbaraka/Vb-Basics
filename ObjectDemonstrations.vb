@@ -1,11 +1,15 @@
 ﻿Public Class ObjectDemonstrations
+    Private Sub reset()
+        TextBox1.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox1.ForeColor = Color.Black
+    End Sub
     Private Sub ObjectDemonstrations_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        reset()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Form1.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
@@ -23,8 +27,6 @@
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         Dim font = New Font(TextBox1.Font, FontStyle.Italic)
         TextBox1.Font = font
-
-
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged

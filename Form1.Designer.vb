@@ -62,7 +62,7 @@ Partial Class Form1
         MenuStrip1.ImageScalingSize = New Size(24, 24)
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(1211, 24)
+        MenuStrip1.Size = New Size(1179, 24)
         MenuStrip1.TabIndex = 3
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -90,7 +90,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         CausesValidation = False
-        ClientSize = New Size(1211, 662)
+        ClientSize = New Size(1179, 701)
         Controls.Add(Panel1)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -99,7 +99,7 @@ Partial Class Form1
         FormBorderStyle = FormBorderStyle.FixedSingle
         MainMenuStrip = MenuStrip1
         Name = "Form1"
-        Text = "Form1"
+        Text = "Welcoming"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         ResumeLayout(False)

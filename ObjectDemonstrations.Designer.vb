@@ -24,14 +24,14 @@ Partial Class ObjectDemonstrations
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         Label1 = New Label()
-        Panel2 = New Panel()
-        TextBox1 = New TextBox()
-        Label2 = New Label()
         Panel3 = New Panel()
         Panel4 = New Panel()
         RadioButton1 = New RadioButton()
         RadioButton3 = New RadioButton()
         RadioButton2 = New RadioButton()
+        Panel2 = New Panel()
+        TextBox1 = New TextBox()
+        Label2 = New Label()
         Label3 = New Label()
         Panel7 = New Panel()
         CheckBox3 = New CheckBox()
@@ -47,9 +47,9 @@ Partial Class ObjectDemonstrations
         Label5 = New Label()
         PictureBox1 = New PictureBox()
         Panel1.SuspendLayout()
-        Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
+        Panel2.SuspendLayout()
         Panel7.SuspendLayout()
         Panel9.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -61,51 +61,21 @@ Partial Class ObjectDemonstrations
         Panel1.BorderStyle = BorderStyle.FixedSingle
         Panel1.CausesValidation = False
         Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Panel3)
         Panel1.Location = New Point(1, 1)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1087, 58)
+        Panel1.Size = New Size(1157, 755)
         Panel1.TabIndex = 0
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(424, 28)
         Label1.Name = "Label1"
         Label1.Size = New Size(231, 28)
         Label1.TabIndex = 0
         Label1.Text = "Object Demonstrations"
-        ' 
-        ' Panel2
-        ' 
-        Panel2.AutoSize = True
-        Panel2.BorderStyle = BorderStyle.FixedSingle
-        Panel2.CausesValidation = False
-        Panel2.Controls.Add(TextBox1)
-        Panel2.Location = New Point(34, 106)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(307, 188)
-        Panel2.TabIndex = 1
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(32, 63)
-        TextBox1.Name = "TextBox1"
-        TextBox1.PlaceholderText = "Sample text"
-        TextBox1.ScrollBars = ScrollBars.Horizontal
-        TextBox1.Size = New Size(214, 31)
-        TextBox1.TabIndex = 0
-        TextBox1.TabStop = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.CausesValidation = False
-        Label2.Location = New Point(120, 95)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(105, 25)
-        Label2.TabIndex = 2
-        Label2.Text = "Display Text"
         ' 
         ' Panel3
         ' 
@@ -113,9 +83,9 @@ Partial Class ObjectDemonstrations
         Panel3.BorderStyle = BorderStyle.FixedSingle
         Panel3.CausesValidation = False
         Panel3.Controls.Add(Panel4)
-        Panel3.Location = New Point(416, 106)
+        Panel3.Location = New Point(466, 104)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1152, 1881)
+        Panel3.Size = New Size(686, 646)
         Panel3.TabIndex = 3
         ' 
         ' Panel4
@@ -147,7 +117,6 @@ Partial Class ObjectDemonstrations
         RadioButton3.Name = "RadioButton3"
         RadioButton3.Size = New Size(99, 29)
         RadioButton3.TabIndex = 0
-        RadioButton3.TabStop = True
         RadioButton3.Text = "Tahoma"
         RadioButton3.UseVisualStyleBackColor = True
         ' 
@@ -158,9 +127,40 @@ Partial Class ObjectDemonstrations
         RadioButton2.Name = "RadioButton2"
         RadioButton2.Size = New Size(109, 29)
         RadioButton2.TabIndex = 0
-        RadioButton2.TabStop = True
         RadioButton2.Text = "Magneto"
         RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' Panel2
+        ' 
+        Panel2.AutoSize = True
+        Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.CausesValidation = False
+        Panel2.Controls.Add(TextBox1)
+        Panel2.Location = New Point(34, 106)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(307, 188)
+        Panel2.TabIndex = 1
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(32, 63)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.PlaceholderText = "Sample text"
+        TextBox1.ScrollBars = ScrollBars.Horizontal
+        TextBox1.Size = New Size(214, 76)
+        TextBox1.TabIndex = 0
+        TextBox1.TabStop = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.CausesValidation = False
+        Label2.Location = New Point(120, 95)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(105, 25)
+        Label2.TabIndex = 2
+        Label2.Text = "Display Text"
         ' 
         ' Label3
         ' 
@@ -185,7 +185,7 @@ Partial Class ObjectDemonstrations
         ' CheckBox3
         ' 
         CheckBox3.AutoSize = True
-        CheckBox3.Font = New Font("Segoe UI", 10F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        CheckBox3.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         CheckBox3.Location = New Point(34, 189)
         CheckBox3.Name = "CheckBox3"
         CheckBox3.Size = New Size(134, 32)
@@ -196,7 +196,7 @@ Partial Class ObjectDemonstrations
         ' CheckBox2
         ' 
         CheckBox2.AutoSize = True
-        CheckBox2.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CheckBox2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         CheckBox2.Location = New Point(34, 117)
         CheckBox2.Name = "CheckBox2"
         CheckBox2.Size = New Size(81, 32)
@@ -207,7 +207,7 @@ Partial Class ObjectDemonstrations
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
-        CheckBox1.Font = New Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        CheckBox1.Font = New Font("Segoe UI", 10.0F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         CheckBox1.Location = New Point(34, 51)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(79, 32)
@@ -262,7 +262,7 @@ Partial Class ObjectDemonstrations
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.Location = New Point(55, 654)
         Button1.Name = "Button1"
         Button1.Size = New Size(226, 77)
@@ -272,7 +272,7 @@ Partial Class ObjectDemonstrations
         ' 
         ' Button2
         ' 
-        Button2.Font = New Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.Location = New Point(806, 654)
         Button2.Name = "Button2"
         Button2.Size = New Size(196, 77)
@@ -309,8 +309,10 @@ Partial Class ObjectDemonstrations
         ' 
         ' ObjectDemonstrations
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.Control
+        BackgroundImageLayout = ImageLayout.Zoom
         ClientSize = New Size(1243, 776)
         Controls.Add(PictureBox1)
         Controls.Add(Label2)
@@ -321,19 +323,19 @@ Partial Class ObjectDemonstrations
         Controls.Add(Button1)
         Controls.Add(Panel9)
         Controls.Add(Panel7)
-        Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Name = "ObjectDemonstrations"
         Text = "ObjectDemonstrations"
+        WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         Panel3.ResumeLayout(False)
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         Panel7.ResumeLayout(False)
         Panel7.PerformLayout()
         Panel9.ResumeLayout(False)
